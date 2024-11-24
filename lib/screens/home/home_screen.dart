@@ -55,12 +55,12 @@ class _CustomListTitle extends StatelessWidget {
         color: colors.primary,
       ),
       onTap: () {
-        // TODO: implement navigation.
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => const CarsScreen(),
-          ),
-        );
+        // Navigator.of(context).push(
+        //   MaterialPageRoute(
+        //     builder: (context) => const CarsScreen(),
+        //   ),
+        // );
+        Navigator.pushNamed(context, menuItem.link);
       },
     );
   }
