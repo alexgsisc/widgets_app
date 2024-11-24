@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_app/config/menu/menu_item.dart';
-import 'package:widgets_app/screens/cars/cars_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
