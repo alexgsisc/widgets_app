@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class BottomScreen extends StatelessWidget {
+  static const String name = 'bottom_scren';
   const BottomScreen({super.key});
 
   @override
