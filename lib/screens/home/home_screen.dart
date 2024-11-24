@@ -50,7 +50,7 @@ class _CustomListTitle extends StatelessWidget {
         color: colors.primary,
       ),
       title: Text(menuItem.title),
-      subtitle: Text(menuItem.subtitle),
+      subtitle: Text(menuItem.subTitle),
       trailing: Icon(
         Icons.arrow_forward_ios_outlined,
         color: colors.primary,
