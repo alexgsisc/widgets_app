@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
-const List<Color> _colorThemes = [
+const List<Color> colorThemes = [
   Colors.blue,
-  Colors.yellow,
+  Colors.red,
   Colors.green,
+  Colors.pink,
+  Colors.orange,
+  Colors.purple
 ];
 
 class AppTheme {
@@ -12,14 +15,14 @@ class AppTheme {
   AppTheme({
     this.selectedColor = 0,
   }) : assert(
-          selectedColor >= 0 && selectedColor <= _colorThemes.length - 1,
-          'Color must be between 0 and ${_colorThemes.length}',
+          selectedColor >= 0 && selectedColor <= colorThemes.length - 1,
+          'Color must be between 0 and ${colorThemes.length}',
         );
 
   ThemeData get theme {
     return ThemeData(
         useMaterial3: true,
-        colorSchemeSeed: _colorThemes[selectedColor],
+        colorSchemeSeed: colorThemes[selectedColor],
         appBarTheme: const AppBarTheme(
           centerTitle: true,
         ));

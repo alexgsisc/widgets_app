@@ -7,4 +7,5 @@ export 'package:widgets_app/screens/home/home_screen.dart';
 export 'package:widgets_app/screens/infinite_scroll/infinite_scroll_screen.dart';
 export 'package:widgets_app/screens/progress/progress_screen.dart';
 export 'package:widgets_app/screens/snackbar/snackbar_screen.dart';
+export 'package:widgets_app/screens/theme_changer/theme_changer_screen.dart';
 export 'package:widgets_app/screens/ui_controls/ui_controls_screen.dart';
