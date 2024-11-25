@@ -4,3 +4,5 @@ import 'package:widgets_app/config/theme/app_theme.dart';
 final isDarkProvider = StateProvider((ref) => false);
 
 final colorListProvider = StateProvider((ref) => colorThemes);
+
+final selectedColorProvider = StateProvider((ref) => 0);
