@@ -19,13 +19,21 @@ class AppTheme {
           'Color must be between 0 and ${colorThemes.length}',
         );
 
-  ThemeData get theme {
-    return ThemeData(
+  ThemeData get theme => ThemeData(
         useMaterial3: true,
         brightness: isDarkMode ? Brightness.dark : Brightness.light,
         colorSchemeSeed: colorThemes[selectedColor],
         appBarTheme: const AppBarTheme(
           centerTitle: true,
-        ));
-  }
+        ),
+      );
+
+  AppTheme copyWith({
+    int? selectedColor,
+    bool? isDarkMode,
+  }) =>
+      AppTheme(
+        selectedColor: selectedColor ?? this.selectedColor,
+        isDarkMode: isDarkMode ?? this.isDarkMode,
+      );
 }
